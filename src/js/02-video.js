@@ -17,12 +17,6 @@ const player = new Player(iframe, {
   quality: '1080p',
 });
 
-// const player = new Player('handstick', {
-//     id: 19231868,
-//     width: 640
-// });
-
-
 player.on('timeupdate', throttle(getCurrentTime, 1000));
 
 player.setCurrentTime(JSON.parse(localStorage.getItem(CURRENT_TIME)) || 0);

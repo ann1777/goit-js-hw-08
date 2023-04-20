@@ -3,6 +3,7 @@ const LOCAL_KEY = 'feedback-form-state';
 
 form = document.querySelector('.feedback-form');
 
+//loadash.throtle is used to be the storage is updated no more often than once every 500 milliseconds 
 form.addEventListener('input', throttle(onInputData, 500));
 form.addEventListener('submit', onFormSubmit);
 

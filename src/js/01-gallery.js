@@ -66,4 +66,5 @@ function onImgClickCreateModal(e) {
     }
 }
 
+
 console.log(galleryItems);
